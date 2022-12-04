@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    background-color: black;
+}
+.m-container{
+display: flex; 
+justify-content: center;
+flex-wrap: wrap;
+text-align: -webkit-center;
+gap: 40px;
+}
+.card{
+    background-color: rgb(29, 29, 29);
+    width: 300px;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 4px 4px 4px 0px rgba(86, 171, 1, 0.5);
+}
+.card:hover{
+    animation: shake 1s ease 1;
+}
+@keyframes shake {
+    0%{
+        transform: translateY(-3px);
+    }
+    50%{
+        transform: translateY(3px);
+    }
+}
+.card-img img{
+    width: 150px;
+    height: 250px;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+.card p,h3{
+    padding: 10px;
+    color: rgb(86, 171, 1);
+}
+.m-btn{
+    padding: 7px 37px;
+    display: block;
+    text-align: center;
+    margin: 10px;
+    background-color: rgb(86, 171, 1);
+    border-radius: 20px;
+    border: none;
+    font-size: large;
+} 
+.m-btn:hover{
+    background-color: rgb(0, 0, 0);
+    border: 1.5px solid rgb(86, 171, 1);
+    color: rgb(86, 171, 1);
+    transition: 0.9s;
+    cursor: pointer;
+}
+.card a{
+    color: rgb(144, 144, 144);
+    border-top: 1px solid rgb(144, 144, 144);
+    border-bottom: 1px solid rgb(144, 144, 144);
+}
+.a{
+    text-decoration: none !important;
+}
